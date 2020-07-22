@@ -51,7 +51,6 @@ a {
     margin-top: 50px;
     font-size: 42px;
     font-weight: 400;
-    text-align: justify;
     letter-spacing: -2px;
     line-height: 63px;
     text-transform: uppercase;
@@ -78,4 +77,18 @@ a {
 .sure {
     background-color: #ffffff;
     color: #000000 !important;
+}
+.off-on {
+    margin-top: 20px;
+}
+.off-on label {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: #ffffff;
+}
+.off-on label input {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
 }

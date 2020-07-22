@@ -1,7 +1,9 @@
 let prevButton = document.querySelector('.prev-btn'),
     nextButton = document.querySelector('.next-btn'),
     slides = document.querySelectorAll('.slide'),
-    count = 0;
+    checkbox = document.querySelector('.checkbox'),
+    count = 0,
+    interval;
 
 function activeSlide(i) {
     for (let slide of slides) {
@@ -11,7 +13,7 @@ function activeSlide(i) {
 }
 
 function nextSlide() {
-    if(count === slides.length - 1) {
+    if (count === slides.length - 1) {
         count = 0;
         activeSlide(count);
     } else {
@@ -21,7 +23,7 @@ function nextSlide() {
 }
 
 function prevSlide() {
-    if(count === 0) {
+    if (count === 0) {
         count = slides.length - 1;
         activeSlide(count);
     } else {
@@ -30,6 +32,14 @@ function prevSlide() {
     }
 }
 
-setInterval(nextSlide, 4000);
+checkbox.addEventListener('click', function () {
+    this.toggleAttribute('checked');
+    if (checkbox.hasAttribute('checked')) {
+        interval = setInterval(nextSlide, 5000);
+    } else if (!checkbox.hasAttribute('checked')) {
+        clearInterval(interval);
+    }
+});
+
 nextButton.addEventListener('click', nextSlide);
 prevButton.addEventListener('click', prevSlide);
