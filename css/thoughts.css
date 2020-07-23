@@ -1,0 +1,56 @@
+.thoughts {
+    padding: 155px 0 0 0;
+}
+.thoughts-logo {
+    width: 385px;
+}
+.thoughts-logo h2 {
+    margin-top: 10px;
+    font-size: 33px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #000000;
+}
+.thoughts-text {
+    width: 775px;
+}
+.thoughts-text p {
+    font-size: 21.5px;
+    margin-bottom: 30px;
+}
+.blue-border-thoughts h2 {
+    padding: 55px 0;
+}
+.blue-border-thoughts {
+    margin: 110px 0;
+}
+@media (max-width: 1250px) {
+    .thoughts {
+        padding: 77px 0 0 0;
+    }
+    .thoughts-text {
+        width: 100%;
+        margin: 20px 15px;
+    }
+    .thoughts-text p {
+        margin: 0 15px 30px 15px;
+    }
+    .blue-border-thoughts {
+        margin: 110px 15px;
+    }
+}
+@media (max-width: 576px) {
+    .thoughts-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .thoughts-logo img {
+        width: 90%;
+    }
+    .thoughts-logo h2{
+        font-size: 30px;
+    }
+}

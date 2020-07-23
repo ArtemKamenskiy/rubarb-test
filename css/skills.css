@@ -1,0 +1,106 @@
+.skills {
+    padding: 142px 0 200px 0;
+}
+.skills-container {
+    flex-direction: column;
+}
+.skills-title {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 45px;
+}
+.performance {
+    display: flex;
+    justify-content: space-between;
+}
+.performance-text, .subtleties-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.performance-text, .subtleties-image {
+    position: relative;
+    left: 44px;
+}
+.details {
+    margin-top: 50px;
+}
+.blue-btn-details {
+    margin-top: 100px;
+}
+.performance-text p {
+    width: 295px;
+    font-size: 24px;
+}
+.blue-border-performance {
+    width: 475px;
+    padding: 63px 0;
+    background-color: rgba(255, 255, 255, 0.3)
+}
+.blue-border-performance h2 {
+    text-transform: uppercase;
+}
+.subtleties {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 115px;
+}
+.subtleties-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 115px;
+}
+.subtleties-text h2 {
+    margin-left: 215px;
+}
+.subtleties-text p {
+    width: 270px;
+    font-size: 24px;
+    text-align: end;
+}
+.performance-image, .subtleties-text {
+    position: relative;
+    right: 44px;
+}
+.performance-image img, .subtleties-image img {
+    width: 100%;
+    height: 100%;
+}
+@media (max-width: 991px) {
+    .skills {
+        padding: 71px 0 100px 0;
+    }
+    .performance-image, .subtleties-image {
+        display: none;
+    }
+    .performance-text, .subtleties-text {
+        right: 0;
+        left: 0;
+    }
+    .subtleties-details, .subtleties-text h2 {
+        margin-left: 0;
+    }
+    .details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .details p {
+        text-align: center;
+    }
+    .details, .blue-btn-details {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 576px) {
+    .skills-title {
+        font-size: 32px;
+    }
+    .blue-border-performance {
+        width: 345px;
+    }
+}
